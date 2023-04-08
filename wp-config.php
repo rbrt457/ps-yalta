@@ -20,13 +20,13 @@
 
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'boutique-ps' );
+define( 'DB_NAME', 'robsteds_ps' );
 
 /** Имя пользователя базы данных */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'robsteds_ps' );
 
 /** Пароль к базе данных */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', '567149QWEd' );
 
 /** Имя сервера базы данных */
 define( 'DB_HOST', 'localhost' );
