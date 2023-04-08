@@ -10,7 +10,7 @@ get_header() ?>
                     <img src="https://media.everskies.com/nAuJlowZ__vQrz6EIX6v.png" alt="">
                 </div>
                 <div class="room__info">
-                    <h2 class="room__title h2">Номер 1: Стандарт</h2>
+                    <h3 class="room__title h3">Номер 1: Стандарт</h3>
                     <div class="room__description">Описание описание описание описание описание описание описание
                         описание описание
                     </div>
@@ -23,7 +23,7 @@ get_header() ?>
                     <img src="https://media.everskies.com/nAuJlowZ__vQrz6EIX6v.png" alt="">
                 </div>
                 <div class="room__info">
-                    <h2 class="room__title h2">Номер 2: Стандарт+</h2>
+                    <h3 class="room__title h3">Номер 2: Стандарт+</h3>
                     <div class="room__description">Описание описание описание описание описание описание описание
                         описание описание Описание описание описание описание описание описание описание
                         описание описание Описание описание описание описание описание описание описание

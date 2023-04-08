@@ -1,7 +1,11 @@
 .room {
   display: grid;
   grid-template-columns: 310px  auto;
-  gap: 24px;
+  box-shadow: 0 0 24px 5px rgba(34, 60, 80, 0.2);
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .room__picture img {
@@ -13,5 +17,6 @@
 .room__info {
   display: flex;
   flex-direction: column;
+  padding: 24px;
   gap: 12px;
 }

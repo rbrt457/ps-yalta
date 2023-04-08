@@ -296,6 +296,11 @@ p {
   margin-bottom: 48px;
 }
 
+.footer {
+  background-color: #001a2d;
+  min-height: 100px;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -372,7 +377,12 @@ p {
 .room {
   display: grid;
   grid-template-columns: 310px auto;
-  gap: 24px;
+  box-shadow: 0 0 24px 5px rgba(34, 60, 80, 0.2);
+}
+@media (max-width: 991.98px) {
+  .room {
+    grid-template-columns: 1fr;
+  }
 }
 
 .room__picture img {
@@ -384,6 +394,7 @@ p {
 .room__info {
   display: flex;
   flex-direction: column;
+  padding: 24px;
   gap: 12px;
 }
 
@@ -426,7 +437,7 @@ p {
 }
 
 .sfl-container .sf-submit-button-container .sfl-submit-button {
-  background-color: #941717;
+  background-image: none;
 }
 
 /*# sourceMappingURL=main.css.map */
