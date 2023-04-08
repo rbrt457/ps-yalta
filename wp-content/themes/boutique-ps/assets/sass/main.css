@@ -1,0 +1,432 @@
+:root {
+  --black: #222;
+  --white: #fff;
+  --white1: #f4f6f7;
+  --grey: #d6d6d6;
+  --blue: #096de0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin-top: 0 !important;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 1;
+}
+
+a {
+  outline: none;
+  border-bottom: 1px solid var(--theme-main);
+  text-decoration: none;
+  color: var(--blue);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: 0.3s all;
+}
+
+button {
+  outline: none;
+  border-color: transparent;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+}
+
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Italic.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-MediumItalic.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@media (max-width: 1199.98px) {
+  .h-lg-28 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .h-lg-36 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .h-lg-48 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .h-sm-18 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .h-sm-28 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .h-sm-36 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.p1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.p2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.p2--lh {
+  line-height: 28px;
+}
+
+.p3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.p4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.p5 {
+  font-weight: 40;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (max-width: 767.98px) {
+  .p-sm-18 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .p-sm-16 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .p-md-18 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-content: center;
+  gap: 24px;
+}
+
+.menu-item a {
+  color: var(--black);
+}
+
+.menu-item a:hover {
+  color: var(--blue);
+}
+
+.header {
+  padding: 16px 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 100px;
+}
+
+.header__logo-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header--border-shadow {
+  box-shadow: 0px 10px 15px 0px rgba(34, 60, 80, 0.2);
+  margin-bottom: 48px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 508px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 928px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1312px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.main-banner {
+  position: relative;
+  padding: 48px 0;
+  height: 650px;
+}
+
+.main-banner__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+
+.main-banner__background::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 230, 230, 0.2);
+  inset: 0;
+}
+
+.main-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-banner__logo {
+  position: relative;
+  z-index: 5;
+  margin: 0 auto 32px;
+  width: 200px;
+}
+
+.room {
+  display: grid;
+  grid-template-columns: 310px auto;
+  gap: 24px;
+}
+
+.room__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rooms__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+.page__title {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+#block-search, #block-search * {
+  box-sizing: border-box;
+}
+
+#block-search {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.tl-container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1254px;
+}
+
+#tl-booking-form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1265px;
+}
+
+.travelline-search {
+  position: relative;
+  z-index: 5;
+}
+
+.sfl-container .sf-submit-button-container .sfl-submit-button {
+  background-color: #941717;
+}
+
+/*# sourceMappingURL=main.css.map */
