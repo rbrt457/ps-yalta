@@ -1,0 +1,9 @@
+.container {
+  @include make-container-new-max-widths();
+  @include make-container();
+
+  @include media-breakpoint-down(sm) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

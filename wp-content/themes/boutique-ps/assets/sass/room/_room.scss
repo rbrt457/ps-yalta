@@ -1,0 +1,17 @@
+.room {
+  display: grid;
+  grid-template-columns: 310px  auto;
+  gap: 24px;
+}
+
+.room__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

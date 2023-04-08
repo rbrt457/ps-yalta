@@ -1,0 +1,20 @@
+.h-sm-18 {
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.h-sm-28 {
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.h-sm-36 {
+  @include media-breakpoint-down(sm) {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}

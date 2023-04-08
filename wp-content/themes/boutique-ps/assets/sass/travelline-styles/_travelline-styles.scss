@@ -1,0 +1,28 @@
+#block-search, #block-search * {
+  box-sizing: border-box;
+}
+
+#block-search {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.tl-container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1254px;
+}
+
+#tl-booking-form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1265px;
+}
+
+.travelline-search {
+  position: relative;
+  z-index: 5;
+}
+
+.sfl-container .sf-submit-button-container .sfl-submit-button{
+  background-color: #941717;
+}

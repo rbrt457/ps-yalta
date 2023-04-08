@@ -1,0 +1,20 @@
+.h-lg-28 {
+  @include media-breakpoint-down(lg) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.h-lg-36 {
+  @include media-breakpoint-down(lg) {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.h-lg-48 {
+  @include media-breakpoint-down(lg) {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}

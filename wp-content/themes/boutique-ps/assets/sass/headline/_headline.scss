@@ -1,0 +1,12 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+}
+
+@import "h1";
+@import "h2";
+@import "h3";
+@import "h4";
+@import "h-lg";
+@import "h-sm";
