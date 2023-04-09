@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('test')
-
+    new Swiper('.js-room-slider', {
+        loop: true,
+        spaceBetween: 16,
+    })
 })
