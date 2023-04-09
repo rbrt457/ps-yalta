@@ -3,6 +3,7 @@
 add_action('wp_enqueue_scripts', 'theme_name_scripts');
 function theme_name_scripts()
 {
+    wp_enqueue_style('swiper-style', get_template_directory_uri() . '/assets/vendors/swiper/swiper-bundle.min.css');
     wp_enqueue_style('style-name', get_template_directory_uri() . '/assets/sass/main.css');
     wp_enqueue_script(
         'travelline-booking',
@@ -18,7 +19,13 @@ function theme_name_scripts()
         '1.0.0',
         true
     );
-
+    wp_enqueue_script(
+        'swiper',
+        get_template_directory_uri() . '/assets/vendors/swiper/swiper-bundle.min.js',
+        array(),
+        '1.0.0',
+        true
+    );
     wp_enqueue_script(
         'main-script',
         get_template_directory_uri() . '/assets/js/script.js',
