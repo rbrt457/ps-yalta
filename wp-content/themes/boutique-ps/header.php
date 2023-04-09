@@ -52,7 +52,7 @@ echo is_front_page() ? '' : 'header--border-shadow'; ?>">
     <div class="header__container container">
         <div class="header__logo">
             <a href="/" title="Главная страница">
-                <img class="header__logo-icon" src="/wp-content/themes/boutique-ps/assets/images/logo.png"
+                <img class="header__logo-icon" src="/wp-content/themes/boutique-ps/assets/images/logo-1.png"
                      alt="Логотип">
             </a>
         </div>
@@ -60,6 +60,7 @@ echo is_front_page() ? '' : 'header--border-shadow'; ?>">
             <?php
             wp_nav_menu() ?>
         </nav>
+        <a class="header__booking button button--red button--md" href="/booking">Забронировать</a>
     </div>
 </header>
 <main>

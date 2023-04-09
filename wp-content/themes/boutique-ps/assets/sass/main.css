@@ -254,6 +254,38 @@ p {
   }
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  background: transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button--red {
+  border: 1px solid #ad1a25;
+  color: var(--white);
+  background-color: #ad1a25;
+}
+
+.button--red:hover {
+  border: 1px solid #8d141d;
+  background-color: #8d141d;
+}
+
+.button--md {
+  padding: 9px 15px;
+}
+
 .menu {
   padding: 0;
   margin: 0;
@@ -279,16 +311,25 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 48px;
 }
 
 .header__logo {
-  width: 100px;
+  width: 246px;
 }
 
 .header__logo-icon {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.header__navigation {
+  margin-left: auto;
+}
+
+.header__booking {
+  font-weight: 600;
 }
 
 .header--border-shadow {
@@ -363,6 +404,12 @@ p {
 .footer__social-item {
   width: 40px;
   height: 40px;
+  transition: 0.5s all;
+}
+
+.footer__social-item:hover {
+  transform: scale(1.2);
+  transition: 0.5s all;
 }
 
 .footer__social-icon {
@@ -510,6 +557,12 @@ p {
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
+}
+@media (max-width: 767.98px) {
+  .page__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 #block-search, #block-search * {

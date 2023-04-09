@@ -6,16 +6,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 48px;
 }
 
 .header__logo {
-  width: 100px;
+  width: 246px;
 }
 
 .header__logo-icon {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.header__navigation {
+  margin-left: auto;
+}
+
+.header__booking {
+  font-weight: 600;
 }
 
 @import "header--border-shadow";

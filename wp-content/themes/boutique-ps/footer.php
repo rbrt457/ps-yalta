@@ -3,7 +3,7 @@
     <div class="container">
         <div class="footer__main">
             <div class="footer__logo">
-                <img class="footer__logo-icon" src="/wp-content/themes/boutique-ps/assets/images/logo-stars.png">
+                <img class="footer__logo-icon" src="/wp-content/themes/boutique-ps/assets/images/logo.png">
             </div>
             <div class="footer__navigation">
                 <?php
@@ -76,7 +76,8 @@
             </div>
         </div>
         <div class="footer__copyright">
-            <span>© 2023 Бутик-отель "Пряности и Страсти".  Официальный сайт. Все права защищены.</span>
+            <span>© <?php
+                echo date("Y"); ?> Бутик-отель "Пряности и Страсти".  Официальный сайт. Все права защищены.</span>
         </div>
     </div>
 </footer>
