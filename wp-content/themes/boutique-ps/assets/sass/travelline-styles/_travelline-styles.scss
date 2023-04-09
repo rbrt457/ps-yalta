@@ -3,6 +3,7 @@
 }
 
 #block-search {
+  border-radius: 16px;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -21,8 +22,4 @@
 .travelline-search {
   position: relative;
   z-index: 5;
-}
-
-.sfl-container .sf-submit-button-container .sfl-submit-button{
-  background-image: none;
 }
