@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  margin-top: 0!important;
 }
 
 html, body {
@@ -37,9 +36,9 @@ a {
   border-bottom: 1px solid var(--theme-main);
   text-decoration: none;
   color: var(--blue);
+  transition: 0.3s all;
   cursor: pointer;
   touch-action: manipulation;
-  transition: 0.3s all;
 }
 
 button {

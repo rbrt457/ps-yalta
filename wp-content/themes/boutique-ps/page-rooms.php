@@ -16,7 +16,7 @@ get_header()
         $rooms = get_posts([
             'numberposts' => -1,
             'order' => 'ASC',
-            'category_name' => 'rooms'
+            'post_type' => 'rooms'
         ]);
 
         foreach ($rooms as $room) {
@@ -32,13 +32,11 @@ get_header()
                         <div class="js-room-slider room__slider swiper">
                             <div class="swiper-wrapper">
                                 <?php
-
-
                                 foreach ($roomImages as $roomImage) { ?>
-                                    <div class="swiper-slide">
-                                        <a href="<?php
+                                    <div class="room__slide swiper-slide">
+                                        <a class="room__image-link" href="<?php
                                         echo esc_url($roomImage['url']); ?>">
-                                            <img src="<?php
+                                            <img class="room__image" src="<?php
                                             echo esc_url($roomImage['sizes']['large']); ?>" alt="<?php
                                             echo esc_attr($roomImage['alt']); ?>">
                                         </a>
@@ -51,8 +49,15 @@ get_header()
                     <div class="room__info">
                         <h3 class="room__title h3"><?php
                             the_field('roomTitle', $roomId); ?></h3>
-                        <div class="room__description"><?php
-                            the_field('roomDescription', $roomId); ?></div>
+                        <div class="room__description">
+                            <?php
+                            the_field('roomDescription', $roomId);
+
+                            ?>
+
+                        </div>
+                        <a href="<?php
+                        the_permalink($roomId) ?>" target="_blank">Подробнее</a>
                     </div>
                 </div>
             </div>

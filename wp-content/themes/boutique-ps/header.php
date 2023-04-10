@@ -53,14 +53,33 @@ echo is_front_page() ? '' : 'header--border-shadow'; ?>">
     <div class="header__container container">
         <div class="header__logo">
             <a href="/" title="Главная страница">
-                <img class="header__logo-icon" src="/wp-content/themes/boutique-ps/assets/images/logo-1.png"
-                     alt="Логотип">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="<?php
+                    echo get_template_directory_uri() ?>/assets/images/logo.png">
+                    <source media="(min-width: 768px)" srcset="<?php
+                    echo get_template_directory_uri() ?>/assets/images/logo-1.png">
+                    <img class="header__logo-icon" src="<?php
+                    echo get_template_directory_uri() ?>/assets/images/logo-1.png" alt="Логотип">
+                </picture>
+
             </a>
         </div>
         <nav class="header__navigation">
             <?php
-            wp_nav_menu() ?>
+            wp_nav_menu(['menu' => 'main-menu']) ?>
         </nav>
+        <div class="header__phone">
+            <a href="tel:<?php
+            the_field('reception-number-clear'); ?>" class="header__phone-link link" title="Позвонить на ресепшен">
+                <svg class="icon">
+                    <use xlink:href="<?php
+                    echo get_template_directory_uri() ?>/assets/images/sprite.svg#phone"></use>
+                </svg>
+                <span class="header__phone-number"><?php
+                    the_field('reception-number', get_option('page_on_front')); ?></span>
+            </a>
+            <span class="header__phone-text">Ресепшен</span>
+        </div>
         <a class="header__booking button button--red button--md" href="/booking">Забронировать</a>
     </div>
 </header>

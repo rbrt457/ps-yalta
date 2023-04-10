@@ -14,7 +14,6 @@
 
 html {
   scroll-behavior: smooth;
-  margin-top: 0 !important;
 }
 
 html, body {
@@ -45,9 +44,9 @@ a {
   border-bottom: 1px solid var(--theme-main);
   text-decoration: none;
   color: var(--blue);
+  transition: 0.3s all;
   cursor: pointer;
   touch-action: manipulation;
-  transition: 0.3s all;
 }
 
 button {
@@ -286,6 +285,28 @@ p {
   padding: 9px 15px;
 }
 
+.icon {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: currentcolor;
+  stroke: currentcolor;
+  stroke-width: 0;
+}
+
+.link {
+  outline: none;
+  border-bottom: none;
+  text-decoration: none;
+  transition: 0.3s all;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.link:hover {
+  color: var(--blue);
+}
+
 .menu {
   padding: 0;
   margin: 0;
@@ -313,9 +334,19 @@ p {
   justify-content: space-between;
   gap: 48px;
 }
+@media (max-width: 991.98px) {
+  .header__container {
+    gap: 24px;
+  }
+}
 
 .header__logo {
   width: 246px;
+}
+@media (max-width: 767.98px) {
+  .header__logo {
+    width: 80px;
+  }
 }
 
 .header__logo-icon {
@@ -327,9 +358,44 @@ p {
 .header__navigation {
   margin-left: auto;
 }
+@media (max-width: 1199.98px) {
+  .header__navigation {
+    display: none;
+  }
+}
 
 .header__booking {
   font-weight: 600;
+}
+
+@media (max-width: 1199.98px) {
+  .header__phone {
+    margin-left: auto;
+  }
+}
+
+.header__phone-link {
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  gap: 6px;
+}
+@media (max-width: 767.98px) {
+  .header__phone-link {
+    font-size: 16px;
+  }
+}
+
+.header__phone-number {
+  font-weight: 600;
+  font-size: inherit;
+}
+
+.header__phone-text {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
 }
 
 .header--border-shadow {
@@ -345,7 +411,7 @@ p {
 
 .footer__main {
   display: grid;
-  grid-template-areas: "footer-logo footer-navigation footer-payment" "footer-contacts footer-navigation footer-social";
+  grid-template-areas: "footer-logo footer-navigation footer-social" "footer-contacts footer-navigation footer-payment";
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 24px;
   color: var(--grey);
@@ -380,11 +446,18 @@ p {
 }
 
 .footer__link {
+  display: flex;
+  align-items: center;
   color: var(--grey);
+  gap: 8px;
 }
 
 .footer__link:hover {
   color: var(--blue);
+}
+
+.footer__link .icon {
+  font-size: 18px;
 }
 
 .footer__contacts {
@@ -515,17 +588,51 @@ p {
 
 .room {
   display: grid;
-  grid-template-columns: 310px auto;
-  grid-template-rows: 300px;
+  grid-template-columns: 535px auto;
+  height: 100%;
   box-shadow: 0 0 24px 5px rgba(34, 60, 80, 0.2);
+}
+@media (max-width: 1199.98px) {
+  .room {
+    grid-template-columns: 365px auto;
+  }
 }
 @media (max-width: 991.98px) {
   .room {
     grid-template-columns: 1fr;
+    grid-template-rows: 330px auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .room {
+    grid-template-rows: 215px auto;
   }
 }
 
-.room__wrapper img {
+.room__slider {
+  width: 100%;
+  height: 100%;
+}
+
+.rooms__item {
+  height: 435px;
+}
+@media (max-width: 991.98px) {
+  .rooms__item {
+    height: auto;
+  }
+}
+
+.room__slide {
+  width: 100% !important;
+}
+
+.room__image-link {
+  display: block;
+  height: 100%;
+}
+
+.room__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -536,10 +643,6 @@ p {
   flex-direction: column;
   padding: 24px;
   gap: 12px;
-}
-
-.room__slider {
-  height: 100%;
 }
 
 .rooms {

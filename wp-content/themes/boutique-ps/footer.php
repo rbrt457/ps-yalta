@@ -7,7 +7,7 @@
             </div>
             <div class="footer__navigation">
                 <?php
-                wp_nav_menu() ?>
+                wp_nav_menu(['menu' => 'footer-menu']) ?>
             </div>
             <div class="footer__payment payment">
                 <div class="payment__picture">
@@ -25,17 +25,55 @@
                 </div>
             </div>
             <div class="footer__contacts">
-                <div class="footer__address">
-                    <a href="https://yandex.ru/maps/11470/yalta/?ll=34.165096%2C44.492261&mode=poi&poi%5Bpoint%5D=34.163524%2C44.492415&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D117807040385&z=17"
-                       class="footer__link link"
-                       target="_blank"
-                       title="Яндекс Карты. Бутик-отель 'Пряности и Страсти'">наб.
-                        имени В.И. Ленина, 31Б, Ялта</a>
-                </div>
-                <div class="footer__phone">
-                    <a href="tel:+79788739882" class="footer__link link" title="Позвонить на ресепшн">+7(978) 873 98
-                        82</a>
-                </div>
+                <?php
+                if (get_field('address', get_option('page_on_front'))) { ?>
+                    <div class="footer__address">
+                        <a href="<?php
+                        the_field('link-to-map', get_option('page_on_front')); ?>"
+                           class="footer__link link"
+                           target="_blank"
+                           title="Карта">
+                            <svg class="icon">
+                                <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/images/sprite.svg#location"></use>
+                            </svg>
+                            <span><?php
+                                the_field('address', get_option('page_on_front')); ?></span>
+                        </a>
+                    </div>
+                    <?php
+                } ?>
+                <?php
+                if (get_field('reception-number', get_option('page_on_front'))) { ?>
+                    <div class="footer__phone">
+                        <a href="tel:<?php
+                        the_field('reception-number-clear', get_option('page_on_front')); ?>" class="footer__link link"
+                           title="Позвонить на ресепшен">
+                            <svg class="icon">
+                                <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/images/sprite.svg#phone"></use>
+                            </svg>
+                            <span><?php
+                                the_field('reception-number', get_option('page_on_front')); ?></span>
+                            </a>
+                    </div>
+                    <?php
+                } ?>
+                <?php
+                if (get_field('email', get_option('page_on_front'))) { ?>
+                    <div class="footer__phone">
+                        <a href="mailto:<?php
+                        the_field('email', get_option('page_on_front')); ?>" class="footer__link link"
+                           title="Написать письмо">
+                            <svg class="icon">
+                                <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/images/sprite.svg#email"></use>
+                            </svg>
+                            <span>
+                                <?php
+                                the_field('email', get_option('page_on_front')); ?>
+                            </span>
+                           </a>
+                    </div>
+                    <?php
+                } ?>
             </div>
             <div class="footer__social">
                 <div class="footer__social-item">

@@ -1,5 +1,10 @@
 .header {
   padding: 16px 0;
+
+  //position: fixed;
+  //z-index: 15;
+  //width: 100%;
+  //background: rgba(255, 255, 255, 0.5);
 }
 
 .header__container {
@@ -7,10 +12,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 48px;
+  @include media-breakpoint-down(md){
+    gap:24px;
+  }
 }
 
 .header__logo {
   width: 246px;
+  @include media-breakpoint-down(sm){
+    width: 80px;
+  }
 }
 
 .header__logo-icon {
@@ -21,10 +32,42 @@
 
 .header__navigation {
   margin-left: auto;
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }
 
 .header__booking {
   font-weight: 600;
+}
+
+.header__phone {
+  @include media-breakpoint-down(lg) {
+    margin-left: auto;
+  }
+}
+
+.header__phone-link {
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  gap: 6px;
+  @include media-breakpoint-down(sm){
+    font-size: 16px;
+  }
+}
+
+.header__phone-number {
+  font-weight: 600;
+  font-size: inherit;
+}
+
+.header__phone-text {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
 }
 
 @import "header--border-shadow";

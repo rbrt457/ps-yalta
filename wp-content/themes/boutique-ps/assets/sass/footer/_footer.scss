@@ -7,8 +7,8 @@
 .footer__main {
   display: grid;
   grid-template-areas:
-    "footer-logo footer-navigation footer-payment"
-    "footer-contacts footer-navigation footer-social";
+    "footer-logo footer-navigation footer-social"
+    "footer-contacts footer-navigation footer-payment";
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 24px;
   color: var(--grey);
@@ -47,11 +47,18 @@
 }
 
 .footer__link {
+  display: flex;
+  align-items: center;
   color: var(--grey);
+  gap: 8px;
 }
 
 .footer__link:hover {
   color: var(--blue);
+}
+
+.footer__link .icon {
+  font-size: 18px;
 }
 
 .footer__contacts {
