@@ -1,0 +1,54 @@
+.room-detail__banner {
+  @include sectionMarginBottom;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  height: 450px;
+  gap: 32px;
+}
+
+.room-detail__banner-swiper {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  inset: 0;
+}
+
+//.room-detail__banner-swiper::before {
+//  content: "";
+//  position: absolute;
+//  z-index: 5;
+//  width: 100%;
+//  height: 100%;
+//  background-color: rgba(255, 230, 230, 0.2);
+//  inset: 0;
+//}
+
+.room-detail__banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.room-detail__banner-content {
+  position: relative;
+  z-index: 10;
+}
+
+.room-detail__banner-content .page__title {
+  color: var(--white);
+}
+
+.room-detail__two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 24px;
+}
+
+.room-detail__equipment ul {
+  margin: 0;
+}

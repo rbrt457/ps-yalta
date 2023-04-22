@@ -1,16 +1,17 @@
 .menu {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
   display: flex;
   align-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   gap: 24px;
 }
 
-.menu-item a{
+.menu-item a {
   color: var(--black);
 }
 
 .menu-item a:hover {
   color: var(--blue);
 }
+

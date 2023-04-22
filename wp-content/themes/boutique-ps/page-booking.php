@@ -8,7 +8,7 @@ get_header()
 <div class="container page">
     <h1 class="page__title"><?php the_title()?></h1>
 
-    <div id='tl-booking-form'>&nbsp;</div>
+    <?php get_template_part('components/travelline/booking-form/booking-form') ?>
 </div>
 
 <?php

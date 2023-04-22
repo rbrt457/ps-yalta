@@ -49,12 +49,12 @@
 <body>
 
 <header class="header <?php
-echo is_front_page() ? '' : 'header--border-shadow'; ?>">
+echo is_front_page() || is_page_template('room-detail.php') ? '' : 'header--border-shadow'; ?>">
     <div class="header__container container">
         <div class="header__logo">
             <a href="/" title="Главная страница">
                 <picture>
-                    <source media="(max-width: 767px)" srcset="<?php
+                    <source media="(max-width: 767.9px)" srcset="<?php
                     echo get_template_directory_uri() ?>/assets/images/logo.png">
                     <source media="(min-width: 768px)" srcset="<?php
                     echo get_template_directory_uri() ?>/assets/images/logo-1.png">
@@ -75,12 +75,30 @@ echo is_front_page() ? '' : 'header--border-shadow'; ?>">
                     <use xlink:href="<?php
                     echo get_template_directory_uri() ?>/assets/images/sprite.svg#phone"></use>
                 </svg>
-                <span class="header__phone-number"><?php
-                    the_field('reception-number', get_option('page_on_front')); ?></span>
+                <span class="header__phone-number">
+                    <?php the_field('reception-number', get_option('page_on_front')); ?></span>
             </a>
             <span class="header__phone-text">Ресепшен</span>
         </div>
         <a class="header__booking button button--red button--md" href="/booking">Забронировать</a>
+        <div class="header__menu-button js-burger">
+            <svg class="icon header__burger">
+                <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/images/sprite.svg#burger"></use>
+            </svg>
+            <svg class="icon header__close">
+                <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/images/sprite.svg#close"></use>
+            </svg>
+        </div>
+        <div class="header__mobile js-mobile-menu">
+            <div class="header__mobile-content">
+                <nav class="header__navigation">
+                    <?php
+                    wp_nav_menu(['menu' => 'main-menu']) ?>
+                </nav>
+                <a class="header__booking button button--red button--md" href="/booking">Забронировать</a>
+            </div>
+
+        </div>
     </div>
 </header>
 <main>

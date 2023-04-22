@@ -34,11 +34,9 @@ get_header()
                                 <?php
                                 foreach ($roomImages as $roomImage) { ?>
                                     <div class="room__slide swiper-slide">
-                                        <a class="room__image-link" href="<?php
-                                        echo esc_url($roomImage['url']); ?>">
-                                            <img class="room__image" src="<?php
-                                            echo esc_url($roomImage['sizes']['large']); ?>" alt="<?php
-                                            echo esc_attr($roomImage['alt']); ?>">
+                                        <a class="room__image-link foobox" href="<?php echo $roomImage['url'] ?>">
+                                            <img class="room__image" src="<?php echo $roomImage['url'] ?>" alt="<?php
+                                            echo $roomImage['alt'] ?>">
                                         </a>
                                     </div>
                                     <?php
@@ -56,8 +54,7 @@ get_header()
                             ?>
 
                         </div>
-                        <a href="<?php
-                        the_permalink($roomId) ?>" target="_blank">Подробнее</a>
+                        <a href="<?php the_permalink($roomId) ?>">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -65,6 +62,7 @@ get_header()
         }
         wp_reset_postdata(); ?>
     </div>
+    <?php get_template_part('components/yandex-map/yandex-map') ?>
 </div>
 
 <?php

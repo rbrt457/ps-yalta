@@ -69,3 +69,51 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/IBMPlexSans/IBMPlexSansJP-Thin.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Light.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Regular.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Medium.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-SemiBold.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Bold.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

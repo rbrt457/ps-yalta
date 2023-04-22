@@ -1,6 +1,8 @@
+$roomsItemHeight: 300px;
+
 .room {
   display: grid;
-  grid-template-columns: 535px auto;
+  grid-template-columns: 365px auto;
   height: 100%;
   box-shadow: 0 0 24px 5px rgba(34, 60, 80, 0.2);
 
@@ -24,7 +26,7 @@
 }
 
 .rooms__item {
-  height: 435px;
+  height: $roomsItemHeight;
 
   @include media-breakpoint-down(md) {
     height: auto;
@@ -37,7 +39,7 @@
 
 .room__image-link {
   display: block;
-  height: 100%;
+  height: $roomsItemHeight;
 }
 
 .room__image {
@@ -52,3 +54,4 @@
   padding: 24px;
   gap: 12px;
 }
+

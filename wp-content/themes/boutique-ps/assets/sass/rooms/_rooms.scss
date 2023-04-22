@@ -1,4 +1,6 @@
-.rooms{
+.rooms {
+  @include sectionMarginBottom;
+
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;

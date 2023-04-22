@@ -1,7 +1,9 @@
 .main-banner {
+  @include sectionMarginBottom;
+
   position: relative;
   padding: 48px 0;
-  height: 650px;
+  height: calc(100vh - 75px);
 }
 
 .main-banner__background {
@@ -11,15 +13,15 @@
   inset: 0;
 }
 
-.main-banner__background::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 230, 230, 0.2);
-  inset: 0;
-}
+//.main-banner__background::before {
+//  content: "";
+//  position: absolute;
+//  z-index: 1;
+//  width: 100%;
+//  height: 100%;
+//  background-color: rgba(255, 230, 230, 0.2);
+//  inset: 0;
+//}
 
 .main-banner img {
   width: 100%;

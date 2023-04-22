@@ -27,6 +27,13 @@ function theme_name_scripts()
         true
     );
     wp_enqueue_script(
+        'jQuery',
+        get_template_directory_uri() . '/assets/vendors/jQuery/jquery-3.6.4.min.js',
+        array(),
+        '1.0.0',
+        true
+    );
+    wp_enqueue_script(
         'main-script',
         get_template_directory_uri() . '/assets/js/script.js',
         array(),
