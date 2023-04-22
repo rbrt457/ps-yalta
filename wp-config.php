@@ -20,10 +20,10 @@
 
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'robsteds_ps' );
+define( 'DB_NAME', 'psyalta_test' );
 
 /** Имя пользователя базы данных */
-define( 'DB_USER', 'robsteds_ps' );
+define( 'DB_USER', 'psyalta_test' );
 
 /** Пароль к базе данных */
 define( 'DB_PASSWORD', '567149QWEd' );
