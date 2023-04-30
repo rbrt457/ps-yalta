@@ -83,13 +83,13 @@
                              alt="Ins">
                     </a>
                 </div>
-                <div class="footer__social-item">
-                    <a href="https://t.me/#" target="_blank" title="Перейти в Telegram">
-                        <img class="footer__social-icon"
-                             src="/wp-content/themes/boutique-ps/assets/images/social-icons/icon-telegram.png"
-                             alt="Телеграм">
-                    </a>
-                </div>
+<!--                <div class="footer__social-item">-->
+<!--                    <a href="https://t.me/#" target="_blank" title="Перейти в Telegram">-->
+<!--                        <img class="footer__social-icon"-->
+<!--                             src="/wp-content/themes/boutique-ps/assets/images/social-icons/icon-telegram.png"-->
+<!--                             alt="Телеграм">-->
+<!--                    </a>-->
+<!--                </div>-->
                 <div class="footer__social-item">
                     <a href="https://wa.me/79788739882" target="_blank" title="Перейти в WhatsApp">
                         <img class="footer__social-icon"
