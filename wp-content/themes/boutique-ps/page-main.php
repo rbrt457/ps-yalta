@@ -21,9 +21,9 @@ get_header()
 </div>
 
 <div class="container">
-    <section class="section">
-        <h2 class="h2 h-sm-28 section__title">Популярные номера</h2>
-    </section>
+<!--    <section class="section">-->
+<!--        <h2 class="h2 h-sm-28 section__title">Популярные номера</h2>-->
+<!--    </section>-->
 
     <?php get_template_part('components/yandex-map/yandex-map') ?>
 </div>
