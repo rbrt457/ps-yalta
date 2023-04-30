@@ -1,0 +1,26 @@
+.error-404__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-404__title {
+  margin-bottom: 16px;
+  font-size: 124px;
+  line-height: 132px;
+  text-shadow: 1px 0 1px #ccc, 0 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;
+  color: var(--red);
+  background: #fff;
+}
+
+.error-404__text {
+  margin-bottom: 24px;
+  font-weight: 600;
+  @include media-breakpoint-down(sm){
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.error-404__button {
+}
