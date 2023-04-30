@@ -1,10 +1,11 @@
 @import "base/colors";
-@import "base/general";
 @import "fonts/fonts";
+@import "base/general";
 @import "helpers/functions";
 @import "helpers/helpers";
 @import "helpers/mixins";
 @import "headline/headline";
+@import "text/text";
 @import "p/p";
 @import "button/button";
 @import "icon/icon";
@@ -23,3 +24,7 @@
 @import "yandex-map/yandex-map";
 @import "room-detail/room-detail";
 @import "gallery/gallery";
+@import "margin-bottom/margin-bottom";
+@import "card/card";
+@import "menu-list/menu-list";
+@import "error-404/error-404";

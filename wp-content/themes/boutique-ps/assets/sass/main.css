@@ -7,6 +7,96 @@
   --red: #ad1a25;
 }
 
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Italic.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-MediumItalic.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url("/local/html/fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-family: "Open-Sans";
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/IBMPlexSans/IBMPlexSansJP-Thin.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Light.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Regular.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Medium.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-SemiBold.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Bold.ttf") format("truetype");
+  font-family: "Inter-Tight";
+  font-weight: 700;
+  font-style: normal;
+}
 *,
 *::before,
 *::after {
@@ -59,111 +149,6 @@ button {
   background-color: transparent;
 }
 
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-Italic.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-MediumItalic.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/local/html/fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
-  font-family: "Open-Sans";
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/IBMPlexSans/IBMPlexSansJP-Thin.ttf") format("truetype");
-  font-family: "Inter-Tight";
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Light.ttf") format("truetype");
-  font-family: "Inter-Tight";
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Regular.ttf") format("truetype");
-  font-family: "Inter-Tight";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Medium.ttf") format("truetype");
-  font-family: "Inter-Tight";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-SemiBold.ttf") format("truetype");
-  font-family: "Inter-Tight";
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/wp-content/themes/boutique-ps/assets/sass/fonts/InterTight/InterTight-Bold.ttf") format("truetype");
-  font-family: "Inter-Tight";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -234,6 +219,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 36px;
     line-height: 48px;
   }
+}
+
+.text-center {
+  text-align: center;
 }
 
 p {
@@ -328,6 +317,18 @@ p {
   padding: 9px 15px;
 }
 
+.button--outline-red {
+  border-color: var(--red);
+  color: var(--red);
+  background-color: transparent;
+}
+
+.button--outline-red:hover {
+  border-color: var(--red);
+  color: var(--white);
+  background-color: var(--red);
+}
+
 .icon {
   display: block;
   width: 1em;
@@ -348,6 +349,14 @@ p {
 
 .link:hover {
   color: var(--blue);
+}
+
+.link--red {
+  color: var(--red);
+}
+
+.link--bold {
+  font-weight: 700;
 }
 
 .section {
@@ -439,6 +448,9 @@ p {
   }
 }
 
+.header__phone {
+  margin-left: auto;
+}
 @media (max-width: 1199.98px) {
   .header__phone {
     margin-left: auto;
@@ -483,12 +495,11 @@ p {
 }
 
 .header__mobile.show {
-  height: calc(100vh - 74px);
+  height: calc(20vh - 74px);
 }
 
 .header__mobile-content {
-  padding-top: 10px;
-  padding-bottom: 24px;
+  padding: 24px;
 }
 
 .header__mobile .header__navigation {
@@ -811,6 +822,12 @@ p {
   font-size: 48px;
   line-height: 56px;
 }
+@media (max-width: 991.98px) {
+  .page__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
 @media (max-width: 767.98px) {
   .page__title {
     font-size: 28px;
@@ -958,6 +975,60 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 0 24px 5px rgba(34, 60, 80, 0.2);
+  background-color: var(--white);
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-list__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.error-404__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-404__title {
+  margin-bottom: 16px;
+  font-size: 124px;
+  line-height: 132px;
+  text-shadow: 1px 0 1px #ccc, 0 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;
+  color: var(--red);
+  background: #fff;
+}
+
+.error-404__text {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+@media (max-width: 767.98px) {
+  .error-404__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

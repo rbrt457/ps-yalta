@@ -50,6 +50,9 @@
 }
 
 .header__phone {
+  margin-left: auto;
+
+
   @include media-breakpoint-down(lg) {
     margin-left: auto;
   }
@@ -92,12 +95,12 @@
 }
 
 .header__mobile.show {
-  height: calc(100vh - 74px);
+  //height: calc(100vh - 74px);
+  height: calc(20vh - 74px);
 }
 
 .header__mobile-content {
-  padding-top: 10px;
-  padding-bottom: 24px;
+  padding: 24px;
 }
 
 .header__mobile .header__navigation {
