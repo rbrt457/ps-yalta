@@ -2,7 +2,7 @@
 
 get_header()
 
-/* Template Name: main */
+/* Template Name: 404 */
 
 
 ?>
