@@ -374,6 +374,9 @@ p {
 }
 
 .section__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 32px;
 }
 @media (max-width: 1199.98px) {
@@ -920,7 +923,7 @@ p {
   flex-direction: column;
   justify-content: center;
   padding: 32px;
-  height: 450px;
+  height: 600px;
   gap: 32px;
 }
 @media (max-width: 1199.98px) {
@@ -931,6 +934,16 @@ p {
 @media (max-width: 767.98px) {
   .room-detail__banner {
     margin-bottom: 48px;
+  }
+}
+@media (max-width: 767.98px) {
+  .room-detail__banner {
+    height: 430px;
+  }
+}
+@media (max-width: 575.98px) {
+  .room-detail__banner {
+    height: calc(100vh - 75px);
   }
 }
 
@@ -957,14 +970,38 @@ p {
   color: var(--white);
 }
 
-.room-detail__two-columns {
+.room-detail__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 0 24px;
 }
 
+@media (min-width: 1200px) {
+  .room-detail__grid--two-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .room-detail__equipment ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 0;
+  padding-left: 20px;
+  gap: 2px 28px;
+}
+@media (max-width: 1199.98px) {
+  .room-detail__equipment ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .room-detail__equipment ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575.98px) {
+  .room-detail__equipment ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .gallery__swiper {
@@ -1029,6 +1066,36 @@ p {
     font-size: 14px;
     line-height: 18px;
   }
+}
+
+.slider-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider-control__button {
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
+}
+@media (max-width: 767.98px) {
+  .slider-control__button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+
+.slider-control__next {
+  transform: rotate(270deg);
+}
+
+.slider-control__prev {
+  transform: rotate(-270deg);
 }
 
 /*# sourceMappingURL=main.css.map */

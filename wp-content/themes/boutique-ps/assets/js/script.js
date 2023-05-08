@@ -16,7 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
             768: {
                 slidesPerView: 2,
             }
-
+        },
+        navigation:{
+            prevEl:'.room-detail__gallery .slider-control__prev',
+            nextEl:'.room-detail__gallery .slider-control__next'
         }
     })
 
@@ -28,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             delay: 3000,
 
         }
+
     })
 
     $('.js-burger').click(function () {

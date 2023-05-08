@@ -1,0 +1,27 @@
+.slider-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider-control__button {
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
+  @include media-breakpoint-down(sm){
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+
+.slider-control__next {
+  transform: rotate(270deg);
+}
+
+.slider-control__prev {
+  transform: rotate(-270deg);
+}

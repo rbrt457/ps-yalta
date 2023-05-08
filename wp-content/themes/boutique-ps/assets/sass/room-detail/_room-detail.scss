@@ -6,8 +6,16 @@
   flex-direction: column;
   justify-content: center;
   padding: 32px;
-  height: 450px;
+  height: 600px;
   gap: 32px;
+
+  @include media-breakpoint-down(sm) {
+    height: 430px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    height: calc(100vh - 75px);
+  }
 }
 
 .room-detail__banner-swiper {
@@ -43,12 +51,33 @@
   color: var(--white);
 }
 
-.room-detail__two-columns {
+.room-detail__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 0 24px;
 }
 
+.room-detail__grid--two-col {
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .room-detail__equipment ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 0;
+  padding-left: 20px;
+  gap: 2px 28px;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-breakpoint-down(xs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

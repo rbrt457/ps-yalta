@@ -3,6 +3,9 @@
 }
 
 .section__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 32px;
 
   @include media-breakpoint-down(lg) {
