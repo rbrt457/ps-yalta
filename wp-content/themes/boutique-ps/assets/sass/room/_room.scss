@@ -40,6 +40,10 @@ $roomsItemHeight: 300px;
 .room__image-link {
   display: block;
   height: $roomsItemHeight;
+
+  @include media-breakpoint-down(md) {
+    height: 100%;
+  }
 }
 
 .room__image {
@@ -53,5 +57,36 @@ $roomsItemHeight: 300px;
   flex-direction: column;
   padding: 24px;
   gap: 12px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 16px;
+  }
 }
 
+.room__about {
+  @include media-breakpoint-up(lg) {
+    align-self: end;
+    margin-top: auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 24px;
+    padding: 15px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 16px;
+  }
+}
+
+.room__category {
+  color: var(--grey1);
+}
+
+.room__description {
+  display: -webkit-box; /* stylelint-disable-line */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
