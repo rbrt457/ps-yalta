@@ -7,7 +7,7 @@
             </div>
             <div class="footer__navigation">
                 <?php
-                wp_nav_menu(['menu' => 'footer-menu']) ?>
+                wp_nav_menu(['menu' => 'second-menu']) ?>
             </div>
             <div class="footer__payment payment">
                 <div class="payment__picture">

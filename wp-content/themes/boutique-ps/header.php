@@ -122,11 +122,9 @@ echo is_front_page() || is_page_template('room-detail.php') ? '' : 'header--bord
         </div>
         <div class="header__mobile js-mobile-menu">
             <div class="header__mobile-content">
-<!--                <nav class="header__navigation">-->
-<!--                    --><?php
-//                    wp_nav_menu(['menu' => 'main-menu']) ?>
-<!--                </nav>-->
-                <a class="header__booking button button--red button--md" href="/booking">Забронировать</a>
+                <nav class="header__navigation">
+                    <?php wp_nav_menu(['menu' => 'second-menu']) ?>
+                </nav>
             </div>
 
         </div>
