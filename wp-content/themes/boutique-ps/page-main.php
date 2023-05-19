@@ -41,17 +41,12 @@ get_header()
 
                 if (get_field('popularRoom', $roomId)) {
                     ?>
-                    <a class="popular-rooms__item" href="<?php the_permalink($roomId); ?>" title="<?php the_field('roomTitle', $roomId); ?>">
+                    <a class="popular-rooms__item" href="<?php the_permalink($roomId); ?>" title="<?php the_field('roomTitle', $roomId); ?> | <?php the_field('roomCategory', $roomId); ?>">
                         <div class="popular-rooms__background">
-                            <img class="popular-rooms__image"
-                                 src="<?php the_field('roomImage', $roomId); ?>"
-                                 alt="Фото номера">
-
-
+                            <img class="popular-rooms__image" src="<?php the_field('roomImage', $roomId); ?>" alt="Фото номера">
                         </div>
                         <div class="popular-rooms__info">
                             <h4 class="h4"><?php the_field('roomCategory', $roomId); ?></h4>
-
                         </div>
                     </a>
 

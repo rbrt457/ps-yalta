@@ -12,3 +12,17 @@
     margin-bottom: 24px;
   }
 }
+
+.section__title--sm-column {
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+
+    .button {
+      padding: 12px;
+      width: 100%;
+    }
+  }
+}
+

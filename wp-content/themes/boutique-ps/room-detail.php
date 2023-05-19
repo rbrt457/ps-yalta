@@ -25,8 +25,7 @@ Template post type: rooms
             </div>
         </div>
         <div class="container room-detail__banner-content">
-            <h1 class="page__title"><?php
-                the_field('roomTitle'); ?></h1>
+            <h1 class="page__title"><?php the_field('roomTitle'); ?> | <?php the_field('roomCategory'); ?></h1>
         </div>
         <?php
         get_template_part('components/travelline/block-search/block-search') ?>
@@ -140,7 +139,7 @@ Template post type: rooms
                                 ?>
                                     <div class="swiper-slide">
                                         <a class="popular-rooms__item" href="<?php the_permalink($roomId); ?>"
-                                           title="<?php the_field('roomTitle', $roomId); ?>">
+                                           title="<?php the_field('roomTitle', $roomId); ?> | <?php the_field('roomCategory', $roomId); ?>">
                                             <div class="popular-rooms__background">
                                                 <img class="popular-rooms__image"
                                                      src="<?php the_field('roomImage', $roomId); ?>"

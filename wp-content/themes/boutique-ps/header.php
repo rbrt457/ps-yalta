@@ -95,10 +95,10 @@ echo is_front_page() || is_page_template('room-detail.php') ? '' : 'header--bord
 
             </a>
         </div>
-<!--        <nav class="header__navigation">-->
-<!--            --><?php
-//            wp_nav_menu(['menu' => 'main-menu']) ?>
-<!--        </nav>-->
+        <nav class="header__navigation">
+            <?php
+            wp_nav_menu(['menu' => 'main-menu']) ?>
+        </nav>
         <div class="header__phone">
             <a href="tel:<?php
             the_field('reception-number-clear'); ?>" class="header__phone-link link" title="Позвонить на ресепшен">

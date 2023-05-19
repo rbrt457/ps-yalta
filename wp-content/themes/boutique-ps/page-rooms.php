@@ -25,31 +25,18 @@ get_header()
             setup_postdata($room);
 
             ?>
-            <div class="rooms__item">
+            <a class="rooms__item" href="<?php
+            the_permalink($roomId) ?>">
 
                 <div class="room">
-                    <div class="room__wrapper">
-                        <div class="js-room-slider room__slider swiper">
-                            <div class="swiper-wrapper">
-                                <?php
-                                foreach ($roomImages as $roomImage) { ?>
-                                    <div class="room__slide swiper-slide">
-                                        <a class="room__image-link foobox" href="<?php
-                                        echo $roomImage['url'] ?>">
-                                            <img class="room__image" src="<?php
-                                            echo $roomImage['url'] ?>" alt="<?php
-                                            echo $roomImage['alt'] ?>">
-                                        </a>
-                                    </div>
-                                    <?php
-                                } ?>
-                            </div>
-                        </div>
+
+                    <div class="room__image-link">
+                        <img class="room__image" src="<?php the_field('roomImage', $roomId); ?>" alt="Фото номера">
                     </div>
+
                     <div class="room__info">
                         <div>
-                            <h2 class="room__title h2 h-sm-28"><?php
-                                the_field('roomTitle', $roomId); ?></h2>
+                            <h2 class="room__title h2 h-sm-28"><?php the_field('roomTitle', $roomId); ?> | <?php the_field('roomCategory', $roomId); ?></h2>
                             <span class="room__category p5"><?php
                                 the_field('roomCategoryNumber', $roomId); ?></span>
                         </div>
@@ -60,12 +47,10 @@ get_header()
                             ?>
 
                         </div>
-                        <a href="<?php
-                        the_permalink($roomId) ?>" class="p2 room__about button button--outline-red button--md"
-                           title="Подробнее о номере">О номере</a>
+
                     </div>
                 </div>
-            </div>
+            </a>
             <?php
         }
         wp_reset_postdata(); ?>
