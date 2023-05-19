@@ -51,7 +51,7 @@ get_header()
                             <h2 class="room__title h2 h-sm-28"><?php
                                 the_field('roomTitle', $roomId); ?></h2>
                             <span class="room__category p5"><?php
-                                the_field('roomCategory', $roomId); ?></span>
+                                the_field('roomCategoryNumber', $roomId); ?></span>
                         </div>
                         <div class="room__description">
                             <?php
