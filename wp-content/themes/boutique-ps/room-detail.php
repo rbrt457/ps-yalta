@@ -65,13 +65,13 @@ Template post type: rooms
                         <button class="slider-control__button slider-control__prev button button--outline-red">
                             <svg class="icon">
                                 <use
-                                    xlink:href="/wp-content/themes/boutique-ps/assets/images/sprite.svg#collapse-arrow"></use>
+                                        xlink:href="/wp-content/themes/boutique-ps/assets/images/sprite.svg#collapse-arrow"></use>
                             </svg>
                         </button>
                         <button class="slider-control__button slider-control__next button button--outline-red">
                             <svg class="icon">
                                 <use
-                                    xlink:href="/wp-content/themes/boutique-ps/assets/images/sprite.svg#collapse-arrow"></use>
+                                        xlink:href="/wp-content/themes/boutique-ps/assets/images/sprite.svg#collapse-arrow"></use>
                             </svg>
                         </button>
                     </div>
@@ -95,8 +95,72 @@ Template post type: rooms
                     </div>
                 </div>
             </section>
+
+
             <?php
         } ?>
+
+        <section class="section other-rooms">
+            <div class="section__title">
+                <h2 class="h2 h-sm-28 ">Другие номера</h2>
+                <div class="slider-control">
+                    <button class="slider-control__button slider-control__prev button button--outline-red">
+                        <svg class="icon">
+                            <use
+                                    xlink:href="/wp-content/themes/boutique-ps/assets/images/sprite.svg#collapse-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-control__button slider-control__next button button--outline-red">
+                        <svg class="icon">
+                            <use
+                                    xlink:href="/wp-content/themes/boutique-ps/assets/images/sprite.svg#collapse-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="popular-rooms ">
+                <div class="js-other-rooms other-rooms__swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <?php
+                        global $roomId;
+
+                        $rooms = get_posts([
+                            'numberposts' => -1,
+                            'order' => 'ASC',
+                            'post_type' => 'rooms'
+                        ]);
+
+                        foreach ($rooms as $room) {
+                            $roomId = $room->ID;
+                            setup_postdata($room);
+
+                            if ($roomId !== get_the_ID()) {
+                                ?>
+                                    <div class="swiper-slide">
+                                        <a class="popular-rooms__item" href="<?php the_permalink($roomId); ?>"
+                                           title="<?php the_field('roomTitle', $roomId); ?>">
+                                            <div class="popular-rooms__background">
+                                                <img class="popular-rooms__image"
+                                                     src="<?php the_field('roomImage', $roomId); ?>"
+                                                     alt="Фото номера">
+                                            </div>
+                                            <div class="popular-rooms__info">
+                                                <h4 class="h4"><?php the_field('roomCategory', $roomId); ?></h4>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                            <?php }
+                        }
+                        wp_reset_postdata(); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <?php
         get_template_part('components/yandex-map/yandex-map') ?>
     </div>

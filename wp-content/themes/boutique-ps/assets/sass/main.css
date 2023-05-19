@@ -1043,11 +1043,6 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 575.98px) {
-  .room-detail__equipment ul {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 
 .gallery__swiper {
   height: 335px;
@@ -1153,6 +1148,7 @@ p {
 .popular-rooms__item {
   position: relative;
   display: flex;
+  height: 100%;
 }
 
 .popular-rooms__background {
@@ -1165,8 +1161,12 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.5);
-  transition: 0.8s all;
+}
+@media (min-width: 992px) {
+  .popular-rooms__image {
+    transform: scale(1.5);
+    transition: 0.8s all;
+  }
 }
 
 .popular-rooms__item:hover .popular-rooms__image {
@@ -1185,6 +1185,14 @@ p {
   height: 75px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.other-rooms__swiper {
+  height: 335px;
+}
+
+.other-rooms .popular-rooms {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

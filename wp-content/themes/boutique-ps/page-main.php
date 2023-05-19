@@ -38,7 +38,6 @@ get_header()
             foreach ($rooms as $room) {
                 $roomId = $room->ID;
                 setup_postdata($room);
-//                the_permalink($roomId);
 
                 if (get_field('popularRoom', $roomId)) {
                     ?>

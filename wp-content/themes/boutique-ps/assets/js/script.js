@@ -23,6 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    new Swiper('.js-other-rooms', {
+        loop: false,
+        spaceBetween: 16,
+        slidesPerView: 1,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            }
+        },
+        navigation:{
+            prevEl:'.other-rooms .slider-control__prev',
+            nextEl:'.other-rooms .slider-control__next'
+        }
+    })
+
     new Swiper('.js-room-detail-swiper', {
         allowTouchMove: false,
         loop: true,
