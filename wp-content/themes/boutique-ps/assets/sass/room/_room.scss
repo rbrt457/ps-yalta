@@ -20,7 +20,6 @@ $roomsItemHeight: 300px;
   }
 }
 
-
 .room__image-link {
   display: block;
   height: $roomsItemHeight;
@@ -85,4 +84,5 @@ $roomsItemHeight: 300px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   color: var(--black);
+  height: 96px;
 }

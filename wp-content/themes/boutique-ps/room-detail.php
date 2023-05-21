@@ -37,7 +37,7 @@ Template post type: rooms
         } ?>">
             <section class="section">
                 <h2 class="h2 h-sm-28 section__title">Описание</h2>
-                <div class="room-detail__description">
+                <div class="room-detail__description content">
                     <?php
                     echo get_field('roomDescription', get_the_ID()) ?>
                 </div>

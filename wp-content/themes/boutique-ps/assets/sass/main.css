@@ -335,6 +335,10 @@ p {
   background-color: var(--red);
 }
 
+.button--max-content {
+  width: max-content;
+}
+
 .icon {
   display: block;
   width: 1em;
@@ -401,6 +405,10 @@ p {
     padding: 12px;
     width: 100%;
   }
+}
+
+.section--mb-40 {
+  margin-bottom: 40px;
 }
 
 .menu {
@@ -847,6 +855,7 @@ p {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   color: var(--black);
+  height: 96px;
 }
 
 .rooms {
@@ -1240,6 +1249,10 @@ p {
     flex-direction: column;
     align-items: start;
   }
+}
+
+.content p {
+  margin-bottom: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
