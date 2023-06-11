@@ -908,7 +908,8 @@ p {
 }
 
 #block-search {
-  border-radius: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -1253,6 +1254,24 @@ p {
 
 .content p {
   margin-bottom: 12px;
+}
+
+.main-booking-info {
+  position: relative;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding: 0 30px 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+.main-booking-info p:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media (max-width: 767.98px) {
+  .main-booking-info {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

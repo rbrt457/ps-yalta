@@ -20,6 +20,14 @@ get_header()
     <?php
     get_template_part('components/travelline/block-search/block-search') ?>
 
+    <div class="container">
+        <div class="main-booking-info">
+            <p>Дорогие гости! Бронирование открыто до <b>30.06.2023</b>.</p>
+            <p>При бронировании номера от 3‑х ночей, на сайте отеля, <b>скидка 5%</b>.</p>
+        </div>
+    </div>
+
+
 </div>
 
 <div class="container">
