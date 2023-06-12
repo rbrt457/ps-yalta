@@ -10,7 +10,7 @@ get_header()
     <h1 class="page__title"><?php
         the_title() ?></h1>
 
-    <section class="section section--mb-40">
+    <section class="section section--mb-40 content">
         <p>На территории отеля расположен ресторан
             <a href="https://apelsincafe.com/restaurant/pryanosti-i-strasti/"
                class="link link--bold link--red" target="_blank"
@@ -18,13 +18,15 @@ get_header()
                 Апельсин "Пряности и Страсти"</a>.
             Меню сочетает в себе локальную Крымскую кухню, Кавказскую и Европейскую.
             Работает ежедневно с 10:00 утра до 23:00.</p>
+        <p><b>Завтраки:</b> Для гостей отеля предоставляется скидка в размере 25% на всё меню с 10:00 до 12:00, в
+            ресторане "Пряности и Страсти" Апельсин, на территории отеля.</p>
+        <p><b>Рум-сервис:</b> Ресторан Апельсин "Пряности и Страсти" предоставляет услугу рум-сервиса, стоимость данной
+            услуги составляет 10% от счёта.</p>
     </section>
 
     <section class="section">
         <h2 class="h2 h-sm-28 section__title">Меню ресторана</h2>
-        <div class="card mb-24">
-            <span><b>Завтраки:</b> Для гостей отеля предоставляется скидка в размере 25% на всё меню с 10:00 до 12:00, в ресторане "Пряности и Страсти" Апельсин, на территории отеля.</span>
-        </div>
+
         <div class="menu-list foobox">
             <a href="<?php
             echo get_template_directory_uri() ?>/assets/images/menu/menu1.jpg">
