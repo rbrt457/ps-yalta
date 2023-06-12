@@ -36,9 +36,7 @@ get_header()
 
     <section class="section">
         <h2 class="h2 h-sm-28 section__title">Близлежащие места</h2>
-        <div class="js-yandex-map"><iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed5d9b88e486ce1fa45d8d176bb0fb109eb61220784033f8761ecf17a90f2d25&amp;source=constructor"
-                width="100%" height="450" frameborder="0"></iframe></div>
+        <div class="js-yandex-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed5d9b88e486ce1fa45d8d176bb0fb109eb61220784033f8761ecf17a90f2d25&amp;source=constructor" width="100%" height="446" frameborder="0"></iframe></div>
 
     </section>
 
