@@ -114,7 +114,7 @@ get_header()
                 <?php foreach (get_field('beach_photo') as $image) { ?>
                     <div class="swiper-slide">
                         <a href="<?php echo $image ?>" class="foobox">
-                            <img src="<?php echo $image ?>" alt="Фото пляжа" class="gallery__image">
+                            <img src="<?php echo $image ?>" alt="Пляж 'Hungry Bird'" class="gallery__image">
                         </a>
                     </div>
                 <?php } ?>
