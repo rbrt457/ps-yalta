@@ -33,7 +33,8 @@ get_header()
 <div class="container">
 
     <section class="section p2">
-        <span class="h4">Бутик-отель "Пряности и страсти" </span>- это уникальный отель, расположенный на набережной города Ялта. Он предлагает
+        <span class="h4">Бутик-отель "Пряности и страсти" </span>- это уникальный отель, расположенный на набережной
+        города Ялта. Он предлагает
         своим гостям уникальный опыт, сочетающий в себе уют и комфорт.<br><br>
 
         Отель находится в самом сердце города, на набережной, откуда открывается потрясающий вид на море и горы. Каждая
@@ -87,6 +88,38 @@ get_header()
         </div>
 
         <a href="/rooms" class="button button--outline-red button--md button--max-content">Все номера</a>
+    </section>
+
+    <section class="section beach gallery">
+        <div class="section__title">
+            <h2 class="h2 h-sm-28 ">Пляж</h2>
+            <div class="slider-control">
+                <button class="slider-control__button slider-control__prev button button--outline-red">
+                    <svg class="icon">
+                        <use
+                                xlink:href="/wp-content/themes/boutique-ps/assets/images/sprite.svg#collapse-arrow"></use>
+                    </svg>
+                </button>
+                <button class="slider-control__button slider-control__next button button--outline-red">
+                    <svg class="icon">
+                        <use
+                                xlink:href="/wp-content/themes/boutique-ps/assets/images/sprite.svg#collapse-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="js-beach swiper gallery__swiper">
+            <div class="swiper-wrapper">
+                <?php foreach (get_field('beach_photo') as $image) { ?>
+                    <div class="swiper-slide">
+                        <a href="<?php echo $image ?>" class="foobox">
+                            <img src="<?php echo $image ?>" alt="Фото пляжа" class="gallery__image">
+                        </a>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
     </section>
 
     <?php

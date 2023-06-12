@@ -52,6 +52,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 
+    new Swiper('.js-beach', {
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 1,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            }
+        },
+        navigation:{
+            prevEl:'.beach .slider-control__prev',
+            nextEl:'.beach .slider-control__next'
+        }
+    })
+
     $('.js-burger').click(function () {
         $(this).toggleClass('open')
         $('.js-mobile-menu').toggleClass('show')
