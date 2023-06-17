@@ -858,6 +858,20 @@ p {
   height: 96px;
 }
 
+.room__buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+@media (max-width: 767.98px) {
+  .room__buttons {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+
 .rooms {
   margin-bottom: 80px;
   display: grid;

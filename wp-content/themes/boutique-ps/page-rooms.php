@@ -25,18 +25,19 @@ get_header()
             setup_postdata($room);
 
             ?>
-            <a class="rooms__item" href="<?php
-            the_permalink($roomId) ?>">
-
+            <div class="rooms__item">
                 <div class="room">
 
                     <div class="room__image-link">
-                        <img class="room__image" src="<?php the_field('roomImage', $roomId); ?>" alt="Фото номера">
+                        <img class="room__image" src="<?php
+                        the_field('roomImage', $roomId); ?>" alt="Фото номера">
                     </div>
 
                     <div class="room__info">
                         <div>
-                            <h2 class="room__title h2 h-sm-28"><?php the_field('roomTitle', $roomId); ?> | <?php the_field('roomCategory', $roomId); ?></h2>
+                            <h2 class="room__title h2 h-sm-28"><?php
+                                the_field('roomTitle', $roomId); ?> | <?php
+                                the_field('roomCategory', $roomId); ?></h2>
                             <span class="room__category p5"><?php
                                 the_field('roomCategoryNumber', $roomId); ?></span>
                         </div>
@@ -47,10 +48,15 @@ get_header()
                             ?>
 
                         </div>
-
+                        <div class="room__buttons">
+                            <a href="<?php
+                            the_permalink($roomId) ?>" class="button button--sm button--outline-red" title="О номере">О номере</a>
+                            <a href="<?php echo get_site_url(null,'/booking/'); ?><?php  the_field('booking-link', $roomId); ?>"
+                               class="button button--sm button--red" title="Забронировать">Забронировать номер</a>
+                        </div>
                     </div>
                 </div>
-            </a>
+            </div>
             <?php
         }
         wp_reset_postdata(); ?>
