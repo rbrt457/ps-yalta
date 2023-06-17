@@ -105,7 +105,7 @@
                     </a>
                 </div>
                 <div class="footer__social-item">
-                    <a href="https://www.youtube.com/@user-ir2gm9eq1m" target="_blank" title="Перейти в YouTube">
+                    <a href="https://www.youtube.com/@pryanostistrasti" target="_blank" title="Перейти в YouTube">
                         <img class="footer__social-icon"
                              src="/wp-content/themes/boutique-ps/assets/images/social-icons/icon-youtube.png"
                              alt="Иконка инстаграма">
