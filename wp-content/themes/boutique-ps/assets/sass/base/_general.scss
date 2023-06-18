@@ -61,3 +61,8 @@ button {
     margin-bottom: 48px;
   }
 }
+
+img {
+  overflow: auto;
+  overflow-clip-margin: border-box;
+}
