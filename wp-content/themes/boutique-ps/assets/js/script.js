@@ -70,6 +70,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    new Swiper('.auto-gallery', {
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 1,
+        autoplay: true,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            }
+        },
+    })
+
     $('.js-burger').click(function () {
         $(this).toggleClass('open')
         $('.js-mobile-menu').toggleClass('show')
