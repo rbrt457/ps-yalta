@@ -101,7 +101,8 @@ echo is_front_page() || is_page_template('room-detail.php') ? '' : 'header--bord
         </nav>
         <div class="header__phone">
             <a href="tel:<?php
-            the_field('reception-number-clear'); ?>" class="header__phone-link link" title="Позвонить на ресепшен">
+            the_field('reception-number-clear', get_option('page_on_front')); ?>" class="header__phone-link link"
+               title="Позвонить на ресепшен">
                 <svg class="icon">
                     <use xlink:href="<?php
                     echo get_template_directory_uri() ?>/assets/images/sprite.svg#phone"></use>
