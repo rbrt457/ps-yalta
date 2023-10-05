@@ -22,7 +22,7 @@ get_header()
 
     <div class="container">
         <div class="main-booking-info">
-            <p>Дорогие гости! Бронирование открыто до <b>31.10.2023</b>.</p>
+            <p>Дорогие гости! Бронирование открыто до <b><?php the_field('open_booking_data', get_option('page_on_front')); ?></b>.</p>
             <p>При бронировании номера от 3‑х ночей, на сайте отеля, <b>скидка 5%</b>.</p>
         </div>
     </div>
