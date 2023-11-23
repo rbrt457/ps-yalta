@@ -1094,6 +1094,10 @@ p {
   object-fit: cover;
 }
 
+.gallery__swiper--height-auto {
+  height: auto;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
