@@ -1,17 +1,16 @@
 .main-booking-info {
-  position: relative;
-  border-bottom-right-radius: 16px;
-  border-bottom-left-radius: 16px;
-  padding: 0 30px 24px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
+	position: relative;
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	padding: 0 30px 24px;
+	background: rgba(255, 255, 255, 0.8);
 
-  p:not(:last-child) {
-    margin-bottom: 8px;
-  }
+	p:not(:last-child) {
+		margin-bottom: 8px;
+	}
 
-  @include media-breakpoint-down(sm) {
-    font-size: 16px;
-    line-height: 20px;
-  }
+	@include media-breakpoint-down(sm) {
+		font-size: 16px;
+		line-height: 20px;
+	}
 }

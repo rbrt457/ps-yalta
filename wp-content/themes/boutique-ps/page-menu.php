@@ -59,45 +59,7 @@ get_header()
 		</div>
 
 	</section>
-
-	<section class="section">
-		<h3 class="h3 h-sm-18 section__title">Новогоднее предложение</h3>
-
-		<div>
-			<p>Новый год 🎄 2024🥂</p>
-			<p>Apelsin project «Пряности и страсти»</p>
-			<p>Стоимость Новогодней ночи:</p>
-			<ul>
-				<li>Детский билет 8000₽, включая новогодний подарок</li>
-				<li>Взрослый билет 12000₽</li>
-			</ul>
-			<p>Полная оплата за новогоднюю ночь обязательна, а так же предзаказ по горячему блюду и крепкому
-				алкоголю.</p>
-			<p>Все подробности и бронирование по телефону <a href="tel:79789218792"
-											 class="link link--bold link--red">+7(978)
-					921-87-92</a></p>
-		</div>
-
-		<div class="auto-gallery swiper gallery__swiper gallery__swiper--height-auto">
-			<div class="swiper-wrapper foobox">
-				<div class="swiper-slide">
-					<a href="<?php echo get_template_directory_uri() ?>/assets/images/menu/menu-ny-1.jpg">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/menu/menu-ny-1.jpg"
-						     class="menu-list__image" alt='Апельсин. Новогоднее предложение.'>
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="<?php echo get_template_directory_uri() ?>/assets/images/menu/menu-ny-2.jpg">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/menu/menu-ny-2.jpg"
-						     class="menu-list__image" alt='Апельсин. Новогоднее меню.'>
-					</a>
-				</div>
-
-			</div>
-		</div>
-
-	</section>
-
+	
 	<section class="section">
 		<h2 class="h2 h-sm-28 section__title">Grande Terrasse Cafe</h2>
 		<p>А также гостям отеля предоставляется скидка в размере 20% в ресторане <a href="https://gt-cafe.ru/"

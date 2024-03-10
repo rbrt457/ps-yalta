@@ -434,7 +434,11 @@ p {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
   padding: 16px 0;
+  background-color: var(--white);
 }
 
 .header__container {
@@ -733,6 +737,8 @@ p {
 .main-banner {
   margin-bottom: 80px;
   position: relative;
+  display: grid;
+  align-items: center;
   padding: 48px 0;
   height: calc(100vh - 75px);
 }
@@ -1284,7 +1290,6 @@ p {
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
   padding: 0 30px 24px;
-  text-align: center;
   background: rgba(255, 255, 255, 0.8);
 }
 .main-booking-info p:not(:last-child) {
