@@ -12,45 +12,33 @@ get_header()
 		<img src="<?php
             the_field('main-banner'); ?>" alt="">
 	</div>
-
-	<div class="main-banner__logo">
-		<img src="/wp-content/themes/boutique-ps/assets/images/logo-stars.png" alt="">
-	</div>
-
-    <?php
-    get_template_part('components/travelline/block-search/block-search') ?>
-
-	<div class="container">
-		<div class="main-booking-info">
-			<!--            <p>Дорогие гости! Бронирование открыто до <b>-->
-                <?php //the_field('open_booking_data', get_option('page_on_front')); ?><!--</b>.</p>-->
-			<!--            <p>При бронировании номера от 3‑х ночей, на сайте отеля, <b>скидка 5%</b>.</p>-->
-			<p>Дорогие гости! Бутик-отель с <b>10.01.24</b> временно не работает.</p>
-			<p>Ближайшие даты работы отеля: <b> 22.02.24 - 25.02.24</b> и <b>07.03.24 - 30.04.24</b>.</p>
+	
+	<div class="main-banner__content">
+		<div class="main-banner__logo">
+			<img src="/wp-content/themes/boutique-ps/assets/images/logo.png" alt="Логотип">
 		</div>
-	</div>
 
+          <?php get_template_part('components/travelline/block-search/block-search') ?>
+
+
+          <?php if (get_field('info_under_module')) : ?>
+		    <div class="container content">
+			    <div class="main-booking-info">
+                          <?php the_field('info_under_module'); ?>
+			    </div>
+		    </div>
+          <?php endif; ?>
+	</div>
 
 </div>
 
 <div class="container">
 
-	<section class="section p2">
-		<span class="h4">Бутик-отель "Пряности и страсти" </span>- это уникальный отель, расположенный на набережной
-		города Ялта. Он предлагает
-		своим гостям уникальный опыт, сочетающий в себе уют и комфорт.<br><br>
-
-		Отель находится в самом сердце города, на набережной, откуда открывается потрясающий вид на море и горы.
-		Каждая
-		комната в отеле оформлена в уникальном стиле. Здесь вы найдете все,
-		что нужно для комфортного отдыха: мягкие кровати, мягкие подушки и одеяла, а также бесплатный Wi-Fi и
-		отличное обслуживание.<br><br>
-
-		Но самое главное, что делает отель "Пряности и страсти" особенным, — это его атмосфера. Здесь вы
-		почувствуете
-		себя как в уютном доме, где каждый уголок наполнен теплом и уютом. В отеле работает ресторан, где вы можете
-		насладиться изысканными блюдами местной и европейской кухни, а также выпить бокал вина или коктейль.
-	</section>
+    <?php if (get_field('about_hotel')) : ?>
+	    <section class="section content">
+              <?php the_field('about_hotel'); ?>
+	    </section>
+    <?php endif; ?>
 
 	<section class="section">
 		<h2 class="h2 h-sm-28 section__title">Популярные номера</h2>

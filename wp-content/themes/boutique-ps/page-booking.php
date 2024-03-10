@@ -5,51 +5,28 @@ get_header()
 /* Template Name: booking */
 
 ?>
-
 <div class="container page">
-	<h1 class="page__title"><?php
-          the_title() ?></h1>
+	<h1 class="page__title"><?php the_title() ?></h1>
 
-	<div class="card mb-24">
-		<div class="mb-16">
-			<!--			<b>Бронирование:</b> Дорогие гости! Бронирование открыто до-->
-			<!--			<b>-->
-                <?php //the_field('open_booking_data', get_option('page_on_front')); ?><!--</b>-->
-			<p>Дорогие гости! Бутик-отель с <b>10.01.24</b> временно не работает.</p>
-			<p>Ближайшие даты работы отеля: <b> 22.02.24 - 25.02.24</b> и <b>07.03.24 - 30.04.24</b>.</p>
-		</div>
+    <?php if (get_field('booking_info')) : ?>
+	    <div class="card content mb-24">
+              <?php the_field('booking_info'); ?>
+	    </div>
+    <?php endif; ?>
 
-		<!--		<div class="mb-16">При бронировании номера от 3‑х ночей, на сайте отеля, <b>скидка 5%</b></div>-->
-		<div><b>Завтраки:</b> Для гостей отеля предоставляется скидка в размере 25% на всё <a href="/menu"
-																  class="link link--red link--bold">меню</a>
-			с 10:00 до 13:00, в ресторане "Пряности и Страсти" Апельсин, на территории отеля. Скидка
-			предоставляется при
-			предъявлении ключей.
-		</div>
-	</div>
-	<div class="section">
-		<h2 class="h2 h-sm-28 section__title">Платные услуги</h2>
-		<ul>
-			<li> Пляж (Бронирование шезлонга на весь период проживания, на пляже Hungry Birds с предоставлением
-				пляжного полотенца) Стоимость - 600₽ с человека (одно посещение)
-			</li>
-			<li> Парковка на набережной, около отеля, бронируется заранее. Пропускная система проезда. Парковочное
-				место
-				предоставляется по факту его наличия. Наличие парковочных мест уточняется ежедневно перед
-				заездом.
-				Стоимость суток - 200₽.
-			</li>
-			<li> Стирка и сушка личных вещей. Стоимость - 250₽
-			</li>
-			<li> Трансфер (по договоренности)
-			</li>
-		</ul>
-	</div>
+    <?php if (get_field('paid_services')) : ?>
+	    <div class="section content">
+		    <h2 class="h2 h-sm-28 section__title">Платные услуги</h2>
+
+              <?php the_field('paid_services'); ?>
+	    </div>
+    <?php endif; ?>
+
+
 	<div class="section">
           <?php
           get_template_part('components/travelline/booking-form/booking-form') ?>
 	</div>
 </div>
 
-<?php
-get_footer() ?>
+<?php get_footer() ?>
