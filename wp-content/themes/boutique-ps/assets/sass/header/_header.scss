@@ -1,14 +1,12 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
   padding: 16px 0;
-
-  //position: fixed;
-  //z-index: 15;
-  //width: 100%;
-  //background: rgba(255, 255, 255, 0.5);
+  background-color: var(--white);
 }
 
 .header__container {
-  //position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +48,6 @@
 }
 
 .header__phone {
-
   @include media-breakpoint-down(lg) {
     margin-left: auto;
   }
@@ -93,7 +90,9 @@
 
 .header__mobile.show {
   height: 65vh;
-  box-shadow: 0 16px 10px -10px rgba(34, 60, 80, 0.2) inset, 0 -30px 20px -35px rgba(34, 60, 80, 0.2) inset;
+  box-shadow:
+    0 16px 10px -10px rgba(34, 60, 80, 0.2) inset,
+    0 -30px 20px -35px rgba(34, 60, 80, 0.2) inset;
 }
 
 .header__mobile-content {

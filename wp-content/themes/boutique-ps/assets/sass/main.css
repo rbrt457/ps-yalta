@@ -434,7 +434,11 @@ p {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
   padding: 16px 0;
+  background-color: var(--white);
 }
 
 .header__container {
